@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SISTEM INFORMASI</title>
+  <style>
+
+    /* Style untuk background kertas lecek coklat */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('bg1.jpg'); /* Ganti dengan nama file gambar kertas coklat */
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    /* Style untuk judul */
+    h1 {
+      text-align: center;
+      color :darkslategrey;
+    }
+
+    text {
+      text-align: center;
+      color :darkslategrey;
+    }
+
+    /* Style untuk tombol pop-up */
+    .popupButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+    }
+
+    /* Style untuk pop-up */
+    .popup {
+      display: none;
+      background-color: #543007;
+      padding: 20px;
+      color: black;
+      border: 1px solid black;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Style untuk slideshow foto */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .slideshow-container img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Style untuk animasi */
+    @keyframes colorchange {
+      0% {
+        background: red;
+      }
+      25% {
+        background: yellow;
+      }
+      50% {
+        background: blue;
+      }
+      75% {
+        background: green;
+      }
+      100% {
+        background: red;
+      }
+    }
+
+    .animate-bg {
+      width: 100%;
+      height: 300px;
+      animation: colorchange 10s infinite;
+    }
+  </style>
+</head>
+<body>
+  <h1>Selamat Datang!</h1>
+
+  Latar Belakang
+  Sistem informasi merupakan salah satu kebutuhan yang tidak dapat dipisahkan 
+  oleh manusia di era digital saat ini, sistem informasi digunakan untuk meningkatkan 
+  aksesbilitas data yang tersaji secara tepat dan akurat.
+
+  <p></p>
+
+  <button class="popupButton" onclick="showPopup('popup1')">1. Masa Prasejarah</button>
+  <button class="popupButton" onclick="showPopup('popup2')">2. Masa Sejarah</button>
+  <button class="popupButton" onclick="showPopup('popup3')">3. Masa Modern</button>
+  <button class="popupButton" onclick="showPopup('popup4')">4. Tahun Sekarang</button>
+
+  <div id="popup1" class="popup">
+    <p>Pada masa prasejarah belum ada sistem operasi atau sistem komputer diberi instruksi yang harus dikerjakan secara langsung.
+        Pada masa prasejarah mereka mulai menciptakan dan digunakan alat-alat yang menghasilkan bunyi dan isyarat, seperti gendang, terompet yang terbuat dari tanduk binatang. 
+    </p>
+    <button class="closeButton" onclick="closePopup('popup1')">Tutup</button>
+  </div>
+
+  <div id="popup2" class="popup">
+    <p>IPada masa sejarah teknologi informasi juga belum menjadi teknologi masa seperti saat ini.</p>
+    <p>-3000 sebelum masehi digunakan pertama kali tulisan oleh bangsa sumeria dengan menggunakan simbol-simbol yang berbentuk piktograf sebagai huruf.</p>
+    <p>-2900 sebelum masehi penggunaan huruf hieroglif pada bangsa Mesir kuno.</p>
+    <p>-500 sebelum Masehi adanya serat Papyrus digunakan sebagai kertas.</p>
+    <p>-105 Masehi bangsa Cina menemukan kertas.
+    <button class="closeButton" onclick="closePopup('popup2')">Tutup</button>
+  </div>
+
+  <div id="popup3" class="popup">
+    <p>Masa modern terjadi di di awal tahun 1400-an sampai sekarang ini, seperti berikut.
+        <p>-Tahun 1455, Mesin cetak yang menggunakan plat huruf terbuat dari besi dan dapat diganti dalam sikap digunakan untuk pertama kalinya oleh Johann gutenberg.</p>
+        <p>-Tahun 1830 ada di Augusta Lady Byron, yang menulis program komputer pertama di dunia dan bekerjasama dengan Charles babbage yang menggunakan mesin analitikal. Desain tersebut mampu memasukkan data mengolah data, dan menghasilkan bentuk, keluaran dalam sebuah kartu. Mesin ini dikenal sebagai bentuk komputer digital pertama sekalipun cara kerjanya lebih bersifat mekanis jika dibandingkan dengan sifat digital, 94 tahun sebelum adanya komputer digital bernama ENIAC I</p>
+        <p>-Pada tahun 1837, Samuel Morse mengembangkan telegraf dengan bahasa dan kode morse bersama dengan Sir William cook dan Sir Charles wheatstone yang dikirim secara elektronik pegunungan dua tempat penjualan melalui kabel yang dihubungkan ke dua tempat tersebut</p>
+        <p>-Tahun 1891 ada gambar bergerak diproyeksikan pada sebuah layar pertama kali digunakan sebagai cikal bakal film sekarang.</p>
+        <p>-Tahun 1973 sampai 1999 internet diperkenalkan dalam sebuah paper terhadap TCP atau IP kemudian dilakukan pengembangan sebuah protokol jaringan dan dikenal dengan nama TCP atau IP.</p>
+    <button class="closeButton" onclick="closePopup('popup3')">Tutup</button>
+  </div>
+
+  <div id="popup4" class="popup">
+    <p>Sistem bisnis dalam bidang teknologi informasi pertama kali terjadi ketika CERN menanggulangi biaya operasional dan memungut bayaran dari para anggotanya. Pada tahun 1992 pembentukan komunitas internet dan diperkenalkan istilah World Wide Web oleh CERN.</p>
+    <button class="closeButton" onclick="closePopup('popup4')">Tutup</button>
+  </div>
+
+  <h2>Contoh Penerapan Sistem Informasi di Kehidupan</h2>
+
+  <button class="popupButton" onclick="showPopup('popup5')">E commerce</button>
+  <button class="popupButton" onclick="showPopup('popup6')">E Learning</button>
+  <button class="popupButton" onclick="showPopup('popup7')">E Banking</button>
+  <button class="popupButton" onclick="showPopup('popup8')">Fleet Management System</button>
+  <button class="popupButton" onclick="showPopup('popup9')">Office automation system
+  </button>
+
+  <div id="popup5" class="popup">
+    <p>menggunakan E-Commerce, antara lain: Shopee, Lazada, Tokopedia, BukaLapak, dan lainnya.
+    </p>
+    <button class="closeButton" onclick="closePopup('popup5')">Tutup</button>
+  </div>
+
+  <div id="popup6" class="popup">
+    <p>E-learning atau electronic learning adalah contoh bidang lain yang termasuk dalam sistem informasi yang diterapkan dalam bidang pendidikan di segala kelompok umur.
+      Ketika dunia dilanda COVID-19, kehadiran E-Learning yang berbasis pada domain masing-masing sekolah atau perguruan tinggi, maupun berbasis pada google lewat google classroom terbukti menjadi solusi bagi kehidupan sehari-hari para pengajar dan pelajar.  
+      </p>
+    <button class="closeButton" onclick="closePopup('popup6')">Tutup</button>
+  </div>
+
+  <div id="popup7" class="popup">
+    <p>E-Banking atau electronic banking, serta biasa disebut juga dengan istilah internet banking atau perbankan elektronik juga salah satu bidang sistem informasi yang bentuknya sangat beragam dan bermacam-macam. 
+      Contohnya adalah ATM atau automated teller machine yang memudahkan pengguna untuk melakukan transaksi. 
+      </p>
+    <button class="closeButton" onclick="closePopup('popup7')">Tutup</button>
+  </div>
+
+  <div id="popup8" class="popup">
+    <p>Fleet management system adalah bentuk bidang sistem informasi lainnya yang berupa aplikasi yang membantu proses monitoring armada logistik dan pengiriman barang agar proses tracking jadi lebih sistematis dan terus terpusat. Biasanya sistem ini menanggapi pendeteksian berdasarkan lokasi dengan menggunakan bantuan dari GPS.
+    </p>
+    <button class="closeButton" onclick="closePopup('popup8')">Tutup</button>
+  </div>
+
+  <div id="popup9" class="popup">
+    <p>Office automation system merupakan bentuk bidang sistem informasi yang menerapkan keunggulan di mana dapat menggabungkan berbagai macam peralatan informasi teknologi pada perangkat server untuk kebutuhan jaringan komputer. Tentu, tujuan utamanya adalah untuk mempermudah proses komunikasi agar lebih efektif dan efisien.
+    </p>
+    <button class="closeButton" onclick="closePopup('popup9')">Tutup</button>
+  </div>
+
+  <div class="slideshow-container">
+    <div class="mySlides">
+      <img src="gambar1.jpg">
+    </div>
+    <div class="mySlides">
+      <img src="gambar2.jpg">
+    </div>
+    <div class="mySlides">
+      <img src="gambar3.jpg">
+    </div>
+  </div>
+
+  <div class="animate-bg"></div>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Ganti gambar setiap 2 detik
+    }
+
+    function showPopup(popupId) {
+      document.getElementById(popupId).style.display = 'block';
+    }
+
+    function closePopup(popupId) {
+      document.getElementById(popupId).style.display = 'none';
+    }
+  </script>
+</body>
+</html>
